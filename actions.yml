@@ -1,0 +1,14 @@
+name: 'edit latest release'
+description: 'edit latest release'
+author: 'taku-0728'
+inputs:
+  draft:
+    description: '`true` to create a draft (unpublished) release, `false` to create a published one. Default: `false`'
+    required: false
+    default: false
+outputs:
+  upload_url:
+    description: 'The URL for uploading assets to the release'
+runs:
+  using: 'node12'
+  main: 'index.js'
