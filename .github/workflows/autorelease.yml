@@ -22,15 +22,3 @@ jobs:
           body: ${{ github.event.pull_request.body }}
           draft: true
           prerelease: false
-
-# name: ドラフトリリースの自動リリース
-# on:
-#   push:
-#     branches:
-#       - master
-# jobs:
-#   change_draft_release:
-#     name: change_draft_release
-#     runs-on: ubuntu-latest
-#     if: github.event.release.draft == true
-#     steps:
