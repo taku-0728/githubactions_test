@@ -1,0 +1,18 @@
+name: プルリクエストの自動作成
+on:
+  push:
+    branches:
+      - feature*
+jobs:
+  auto_create_pull_request:
+    name: auto_create_pull_request
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v2.8.1
+      with:
+        base: master
+        lavels: auto create
+        title: ワークフローによって自動作成されたプルリクエスト
+        body: テスト
+        draft: true
