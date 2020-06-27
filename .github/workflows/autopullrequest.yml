@@ -10,9 +10,9 @@ jobs:
     steps:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v2.8.1
-      with:
-        base: master
-        lavels: auto create
-        title: ワークフローによって自動作成されたプルリクエスト
-        body: テスト
-        draft: true
+        with:
+          base: master
+          lavels: auto create
+          title: ワークフローによって自動作成されたプルリクエスト
+          body: テスト
+          draft: true
