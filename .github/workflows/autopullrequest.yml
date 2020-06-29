@@ -2,7 +2,7 @@ name: プルリクエストの自動作成
 on:
   push:
     branches:
-      - 'feature*'
+      - 'feature/*'
 jobs:
   auto_create_pull_request:
     name: auto_create_pull_request
