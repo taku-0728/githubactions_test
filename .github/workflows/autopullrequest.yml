@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Create Pull Request
-        uses: actions/create-pull-request@v2.8.0
+        uses: peter-evans/create-pull-request@v2
         with:
           base: master
           lavels: auto create
