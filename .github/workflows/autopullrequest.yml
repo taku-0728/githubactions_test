@@ -13,6 +13,7 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v2.0.0
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           base: master
           lavels: auto create
           title: ワークフローによって自動作成されたプルリクエスト
