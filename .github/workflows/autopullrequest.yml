@@ -15,7 +15,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           base: master
-          lavels: auto create
+          labels: auto create
           title: ワークフローによって自動作成されたプルリクエスト
           body: テスト
           draft: true
