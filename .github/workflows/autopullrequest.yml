@@ -15,7 +15,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           base: master
-          branch: feature/workflowtest
+          branch: feature/autorelease_test
           labels: auto create
           title: ワークフローによって自動作成されたプルリクエスト
           body: テスト
