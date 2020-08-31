@@ -11,11 +11,12 @@ jobs:
       - name: Checkout branch
         uses: actions/checkout@v2
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v2.0.0
+        uses: peter-evans/create-pull-request@v3-alpha
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           base: master
-          lavels: auto create
+          branch: feature/autorelease_test
+          labels: auto create
           title: ワークフローによって自動作成されたプルリクエスト
           body: テスト
           draft: true
